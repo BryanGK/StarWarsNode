@@ -4,15 +4,27 @@
   "description": "Practice with React and Node.js",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm run watch --prefix client",
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
     "start": "node server.js"
   },
   "author": "Bryan Krauss",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^6.2.1",
     "express": "^4.17.1",
     "http-proxy-middleware": "^1.0.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+    "nodemon": "^2.0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanGK/StarWarsNode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BryanGK/StarWarsNode/issues"
+  },
+  "homepage": "https://github.com/BryanGK/StarWarsNode#readme"
 }
